@@ -1,0 +1,52 @@
+/*
+  Style.css
+  QuickLookCSV
+
+  Created by Pascal Pfiffner on 03.07.09.
+  This sourcecode is released under the Apache License, Version 2.0
+  http://www.apache.org/licenses/LICENSE-2.0.html
+ */
+
+ body {
+  margin: 20px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Input Mono", "Lucida Grande", "Helvetica Neue", sans-serif;
+  font-size: small;
+ }
+ table {
+  min-width: 100%;
+  border: 1px solid hsl(210, 20%, 80%);
+  border-spacing: 0;
+  border-collapse: separate;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+ }
+ tr {
+  background-color: white;
+ }
+ td {
+  margin: 0;
+  padding: .3em .6em;
+  border-left: 1px solid hsl(210, 20%, 85%);
+  border-top: solid 1px hsl(210, 20%, 85%);
+  vertical-align: top;
+ }
+
+ td:first-child { border-left: 0; }
+ tr:first-child td { border-top: 0;}
+ tr:first-child td:first-child { -webkit-border-top-left-radius: 3px; }
+ tr:first-child td:last-child { -webkit-border-top-right-radius: 3px; }
+ tr:last-child td:first-child { -webkit-border-bottom-left-radius: 3px; }
+ tr:last-child td:last-child { -webkit-border-bottom-right-radius: 3px; }
+
+ .file_info {
+  margin: .5em 2px;
+  color: hsl(0, 0%, 8%);
+  text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+ }
+ .alt_row { background-color: hsl(210, 20%, 95%); }
+ .truncated_rows {
+  margin: .5em 2px;
+  color: hsl(0, 0%, 8%);
+  text-shadow: 0 1px 0 hsla(0, 0%, 100%, .8);
+ }
